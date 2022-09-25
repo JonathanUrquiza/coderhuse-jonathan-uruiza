@@ -1,0 +1,225 @@
+*{
+    font-family: sans-serif;
+}
+header{
+    background-image: url(../img/fondo/aqua.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 0px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    
+}
+
+.contenedor3 {
+   
+    
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    background-image: url(../img/logo/linea\ auto.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    padding: 5px;
+
+}
+
+.logo {
+    height: 20px;
+
+}
+
+.titulo {
+    background-image: url(../img/banderas/banda.png);
+    background-size: 100px 110px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+
+}
+
+.contenedor1 {
+    background-color: rgba(25, 0, 255, 0.425);
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    padding: 5px;
+    margin: 2px 0px 2px 0px;
+}
+
+.caja1:hover{
+    color: rgb(60, 255, 0);
+
+}
+.caja1:visited{
+    color: blueviolet;
+}
+.contenedor2 {
+    
+    background-color: rgba(255, 255, 255, 0.568);
+    flex-wrap: wrap;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    
+    align-items: flex-start;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    padding: 5px;
+    margin: 2px 0px 2px 0px;
+    width: 75%;
+    position: sticky;
+    top: 20px;
+}
+.caja2:hover{
+    color: rgb(60, 255, 0);
+
+}
+.caja2:visited{
+    color: blueviolet;
+}
+a{
+    text-decoration: none;
+    
+}
+
+
+.caja2:hover{
+    color: rgb(94, 255, 0);
+}
+
+
+body{
+    background-image: url(../img/logo/fondo\ de\ tarjeta.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.cuerpo {
+    
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+
+}
+
+
+
+.presentación {
+    width: 1000px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.726);
+    border: 0px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    text-align: center;
+
+}
+.tecnicos{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.operiario {
+    height: 100px;
+    display: flex;
+    padding-left: 25%;
+    
+}
+.foto{
+    height: 100px;
+}
+
+
+.referencia {
+    height: 100px;
+    width: 100px;
+
+
+}
+
+.publicidad {
+
+    padding: 1%;
+    border: 0px solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 25px;
+    width: 25%;
+    text-align: center;
+    margin-left: auto;
+    align-items: stretch;
+    height: auto;
+
+
+
+}
+
+.publicidad__contenido {
+    padding: 1%;
+
+}
+
+footer {
+
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    background-image: url(../img/fondo/red-gradient.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5px 5% 5px 5%;
+    height: 250px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 25px;
+
+}
+
+.instrucciones {
+    width: 25%;
+    margin: 0% 1% 0% 1%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+
+}
+
+.marca {
+    width: 25%;
+    height: 100%;
+    margin: 0% 1% 0% 1%;
+    border: 2px solid rgba(0, 0, 0, 0.603);
+    border-radius: 25px;
+    justify-content: space-evenly;
+}
+
+.pub {
+    width: 70px;
+}
+
+.mapa {
+    width: 50%;
+    margin: 0% 1% 0% 1%;
+    border: 2px solid rgba(0, 0, 0, 0.658);
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.map {
+    height: 100%;
+
+}

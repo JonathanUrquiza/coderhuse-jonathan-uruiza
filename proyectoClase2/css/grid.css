@@ -1,0 +1,33 @@
+.caja{
+    background-color: red;
+    border: 2px solid black;
+    font-size: 3rem;
+  
+}
+
+.caja-posicionanda{
+    background-color: aqua;
+    /**grid-column: span 3;**/
+    
+}
+
+.contenedor{
+    background-color: rgb(67, 64, 64);
+    border: black solid 2px;
+
+    height: 98vh;
+/** dispone todo en grilla**/
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-row: repeat(3, 200px);
+    gap: 20px;
+
+    /**justify-items: start;
+    align-items: start;**/
+
+    /**contenido horizonta**/
+    justify-content: center;
+/**contenido vertica**/
+align-content: space-between;
+}
+

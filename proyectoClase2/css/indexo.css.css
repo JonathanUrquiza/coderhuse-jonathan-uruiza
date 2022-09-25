@@ -1,0 +1,62 @@
+header{
+    background-color: papayawhip;
+    grid-area: header;
+}
+
+section{
+    background-color: dodgerblue;
+}
+
+.productos{
+    grid-area: productos;
+}
+
+.nosotros{
+    grid-area: nosotros;
+}
+
+nav{
+    background-color: green;
+    grid-area: nav;
+}
+aside{
+    background-color: gold;
+    grid-area: aside;
+}
+footer{
+    background-color: red;
+    grid-area: footer;
+
+    /**display: grid;
+    grid-template-columns: repeat(3,25%);
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;**/
+
+
+/**la misma estructura con menos códigos**/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-grid {
+    display: grid;
+    /**grid-template-columns: 20vw 1fr 12vw;
+    grid-template-rows: 10vh 45vh 45vh 15vh;
+    grid-template-areas: 
+    "nav header header"
+    "nav productos aside"
+    "nav nosotros aside"
+    "nav footer footer";**/
+
+    /** la misma estructura con diferentes códigos**/
+    grid-template:
+    "nav header header" 10vh
+    "nav productos aside" 45vh
+    "nav nosotros aside" 45vh
+    "footer footer footer" auto
+    /20vw 1fr 15vw
+}
+
+
