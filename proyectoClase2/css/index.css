@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    list-style: none;
+    
 }
+
 header{
-    background-image: url(../img/fondo/aqua.jpg);
-    background-size: 100%;
+    background-image: url();
+    background-size: cover;
     background-repeat: no-repeat;
     border: 0px solid rgb(0, 0, 0);
     border-radius: 25px;
@@ -15,14 +18,14 @@ header{
 .contenedor3 {
    
     
-    height: 20%;
-    display: flex;
+    height: 20vh;
+   /* display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;*/
 
     background-image: url(../img/logo/linea\ auto.png);
-    background-size: 20%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -35,25 +38,29 @@ header{
 
 .logo {
     height: 20px;
-
 }
 
-.titulo {
-    background-image: url(../img/banderas/banda.png);
-    background-size: 100px 110px;
-    background-repeat: no-repeat;
-    background-position: center;
-
-
-
+@media (min-width: 900px) {
+    
+ 
+    .titulo {
+        background-image: url(../img/banderas/banda.png);
+        background-size: 100px 110px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    
+    
+    }
 }
+
 
 .contenedor1 {
     background-color: rgba(25, 0, 255, 0.425);
-    display: flex;
+    /*display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between;*/
     
     border: 2px solid rgb(0, 0, 0);
     border-radius: 25px;
@@ -71,19 +78,20 @@ header{
 .contenedor2 {
     
     background-color: rgba(255, 255, 255, 0.568);
-    flex-wrap: wrap;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    
-    align-items: flex-start;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 25px;
     padding: 5px;
     margin: 2px 0px 2px 0px;
-    width: 75%;
+
+    /*flex-wrap: wrap;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    align-items: flex-start;*/
+    
+    /*width: 75vw;
     position: sticky;
-    top: 20px;
+    top: 20px;*/
 }
 .caja2:hover{
     color: rgb(60, 255, 0);
@@ -104,32 +112,45 @@ a{
 
 
 body{
-    background-image: url(../img/logo/fondo\ de\ tarjeta.jpg);
+    background-image: url(../img/logo/fondodetarjeta.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
+
+@media (min-width: 900px) {
+   
+    .presentación{
+        background-image: url(../img/fondo/Formulauno.png);
+        background-size: cover;
+    }
+  
+}
+
 .cuerpo {
-    
+    height: max-content;
+    background-color: rgba(240, 248, 255, 0.719);
     background-repeat: no-repeat;
     background-size: 100%;
-    display: flex;
-
+  
 }
 
 
 
-.presentación {
-    width: 1000px;
-    height: auto;
+.principal {
     background-color: rgba(255, 255, 255, 0.726);
     border: 0px solid rgb(0, 0, 0);
     border-radius: 25px;
+    width: auto;
+    height: max-content;
+    
     text-align: center;
 
 }
+
 .tecnicos{
-    display: flex;
-    justify-content: space-between;
+    height: auto;
+    /*display: flex;
+    */
 }
 
 
@@ -157,11 +178,11 @@ body{
     border: 0px solid rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.726);
     border-radius: 25px;
-    width: 25%;
+    /*width: 25%;
     text-align: center;
     margin-left: auto;
     align-items: stretch;
-    height: auto;
+    height: auto;*/
 
 
 
@@ -173,24 +194,26 @@ body{
 }
 
 footer {
-
-
-    display: flex;
-    justify-content: space-evenly;
-    align-items: stretch;
     background-image: url(../img/fondo/red-gradient.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 5px 5% 5px 5%;
-    height: 250px;
+    background-size: cover;
+    position: absolute;
+    bottom: 1;
+    width: 100%;
+
     border: 1px solid rgb(0, 0, 0);
     border-radius: 25px;
-
+    
+    /*display: flex;
+     align-items: stretch;*/
+    
+   /*padding: 5px 5% 5px 5% */;
+   
 }
 
 .instrucciones {
-    width: 25%;
-    margin: 0% 1% 0% 1%;
+    width: max-content;
+    /*margin: 0% 1% 0% 1%;*/
     border: 2px solid rgb(0, 0, 0);
     border-radius: 25px;
     align-items: center;
@@ -200,12 +223,13 @@ footer {
 }
 
 .marca {
-    width: 25%;
-    height: 100%;
+    height: max-content;
+    height: 10 0%;
     margin: 0% 1% 0% 1%;
     border: 2px solid rgba(0, 0, 0, 0.603);
     border-radius: 25px;
-    justify-content: space-evenly;
+display: flex;
+    justify-content: space-between;
 }
 
 .pub {
@@ -213,15 +237,18 @@ footer {
 }
 
 .mapa {
-    width: 50%;
+    
     margin: 0% 1% 0% 1%;
     border: 2px solid rgba(0, 0, 0, 0.658);
     border-radius: 25px;
-    display: flex;
+
+    display: grid;
     justify-content: space-evenly;
+    align-content: center ;
 }
 
 .map {
-    height: 100%;
+    max-height: 50%;
+    max-width: 50%;
 
 }
